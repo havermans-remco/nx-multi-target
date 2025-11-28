@@ -1,0 +1,24 @@
+{
+  "defaultBase": "main",
+  "cli": {
+    "packageManager": "pnpm"
+  },
+  "parallel": 8,
+  "plugins": [
+    "@nx/dotnet"
+  ],
+  "targetDefaults": {
+    "build": {
+      "inputs": [
+        "{projectRoot}/**/*",
+        "{workspaceRoot}/Directory.Build.props",
+        "{workspaceRoot}/Directory.Build.targets",
+        "{workspaceRoot}/dist/intermediates/{projectRoot}/obj/project.assets.json"
+      ],
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}/**/*",
+        "{workspaceRoot}/dist/intermediates/{projectRoot}/**/*"
+      ]
+    }
+  }
+}

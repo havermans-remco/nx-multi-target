@@ -1,0 +1,8 @@
+{
+  "name": "MultiTarget",
+  "root": "libs/MultiTarget",
+  "type": "lib",
+  "implicitDependencies": [
+    "Dependency"
+  ]
+}
